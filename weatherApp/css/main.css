@@ -1,0 +1,60 @@
+body {
+  font-family: 'Lora', 'Times New Roman', serif;
+  font-size: 20px;
+  color: #333333;
+}
+
+#cityDiv {
+	margin: auto;
+	width: 60%;
+	padding: 10px;
+}
+
+
+#Cities{
+	width:50%;
+}
+
+#Countries{
+	width:50%;
+}
+
+#submitCity{
+	margin-bottom:20px;
+	margin-top:20px;
+}
+
+table, th, td {
+	border: 1px solid black;
+}
+
+#submitForecast{
+	margin-bottom:10px;
+}
+
+#apisite{
+	color: blue;
+}
+
+h2.maintitle{
+	font-size: 60px;
+}
+
+h2.hometitle{
+	font-size: 50px;
+}
+
+hr.small {
+  max-width: 100px;
+  margin: 15px auto;
+  border-width: 4px;
+  border-color: white;
+}
+
+footer {
+  padding: 50px 0 65px;
+}
+
+
+
+
