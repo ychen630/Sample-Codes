@@ -1,2 +1,2 @@
 # Sample-Codes
-Sample codes of Yixin Chen
+This folder contains the source codes of five of my projects.
