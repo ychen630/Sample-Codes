@@ -29,7 +29,7 @@ function getForecast(){
 	//call API and display results
 	if(city != 0 && city !=''){
 		$.ajax({
-			url:'http://api.openweathermap.org/data/2.5/forecast?id=' + city + "&units=metric" + "&APPID=9e860fd6d4790893adbc5e5715cc3045",
+			url:'https://api.openweathermap.org/data/2.5/forecast?id=' + city + "&units=metric" + "&APPID=9e860fd6d4790893adbc5e5715cc3045",
 			type:"GET",
 			dataType:"jsonp",
 			success:function(data){
@@ -47,7 +47,7 @@ function getForecast(){
 						count++;
 						table += "<tr>";
 						table += "<td align='center'>" + date+"</td>";
-						table += "<td align='center'><img src='http://openweathermap.org/img/w/"+data.list[i].weather[0].icon+".png'></td>";
+						table += "<td align='center'><img src='https://openweathermap.org/img/w/"+data.list[i].weather[0].icon+".png'></td>";
 						table += "<td align='center'>" + data.list[i].weather[0].main+"</td>";
 						table += "<td align='center'>" + data.list[i].weather[0].description+"</td>";
 						table += "<td align='center'>" + Math.round(data.list[i].main.temp)+"&deg;C</td>";

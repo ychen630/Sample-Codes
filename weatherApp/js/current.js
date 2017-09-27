@@ -20,7 +20,7 @@ function getWeather(){
 	//call API using the city input
 	if(city != 0){
 		$.ajax({
-			url:'http://api.openweathermap.org/data/2.5/weather?id=' + city + "&units=metric" + "&APPID=9e860fd6d4790893adbc5e5715cc3045",
+			url:'https://api.openweathermap.org/data/2.5/weather?id=' + city + "&units=metric" + "&APPID=9e860fd6d4790893adbc5e5715cc3045",
 			type:"GET",
 			dataType:"jsonp",
 			success:function(data){
@@ -41,7 +41,7 @@ function getWeather(){
 function showResults(data){
 	return '<h3 class="text-primary" style="margin-top:20px;">Current Weather for '+data.name+', '+$("#Countries").val()+'</h2>'+
 			"<h3><strong>Weather</strong>: "+data.weather[0].main+"</h3>"+
-			"<h3><strong>Description</strong>: <img src='http://openweathermap.org/img/w/"+data.weather[0].icon+".png'>"+data.weather[0].description+"</h3>"+
+			"<h3><strong>Description</strong>: <img src='https://openweathermap.org/img/w/"+data.weather[0].icon+".png'>"+data.weather[0].description+"</h3>"+
 			"<h3><strong>Temperature</strong>: "+data.main.temp+" &deg;C</h3>"+
 			"<h3><strong>Pressure</strong>: "+data.main.pressure+" hpa</h3>"+
 			"<h3><strong>Humidity</strong>: "+data.main.humidity+"%</h3>"+
