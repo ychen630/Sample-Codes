@@ -1,0 +1,39 @@
+/*
+ * COMP585 Spring 2018
+ * Project 3
+ * 
+ * 
+ * CSS styles
+ * 
+ * Yixin Chen
+ * Mar 12, 2018
+ */
+
+
+.root {
+	-fx-font-family: "Comic Sans MS" ;	
+	-fx-background-color: darkcyan ;
+}
+.hangman-board {
+	-fx-background-color:linen ;
+	-fx-padding: 15px ;
+	-fx-alignment: center ;
+}
+
+.hangman-board > .board-grid {
+	-fx-background-color: white ;
+	-fx-border-color: transparent ;
+}
+
+.hangman-board .label:disabled {
+	-fx-opacity: 1.0 ;
+}
+
+.hangman-board > .board-grid > .label {
+	-fx-font-size: 128pt ;
+}
+
+.status {
+	-fx-font-size: 17pt ;
+	-fx-text-fill: mintcream;
+}
