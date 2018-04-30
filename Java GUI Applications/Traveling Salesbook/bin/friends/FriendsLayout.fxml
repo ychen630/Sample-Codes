@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="friendsListPane" prefHeight="573.0" prefWidth="557.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="friends.FriendsLayoutController">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" onMouseClicked="#cancelListing" text="Back to main page">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="75.0" layoutY="55.0" text="Friends list">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+<!-- 
+      <TableView fx:id="friendsListTable" layoutX="115.0" layoutY="150.0" prefHeight="373.0" prefWidth="381.0" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="75.0" AnchorPane.rightAnchor="75.0" AnchorPane.topAnchor="100.0">
+        <columns>
+          <TableColumn fx:id="usernameCol" prefWidth="75.0" text="Username" />
+          <TableColumn fx:id="firstNameCol" prefWidth="106.0" text="First Name" />
+          <TableColumn fx:id="lastNameCol" prefWidth="119.0" text="Last Name" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+ -->
+      <Button layoutX="341.0" layoutY="491.0" mnemonicParsing="false" onMouseClicked="#addFriend" text="Add">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="408.0" layoutY="491.0" mnemonicParsing="false" onMouseClicked="#removeFriend" text="Remove">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="220.0" layoutY="491.0" mnemonicParsing="false" onMouseClicked="#showDetails" text="Show Details">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
