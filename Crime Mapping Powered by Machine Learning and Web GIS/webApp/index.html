@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en" style="height: auto;" class="">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!--jQuery-->
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		
+		<!--leaflet-->
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" />
+		<script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
+		
+		<!--bootstrap-->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		
+		<script src="laCountyCrimePredit.js?v=3.14"></script>
+		<script src="laCountyPredit.js?v=3.14"></script>
+		<script src="cityCenter.js?v=3.14"></script>
+		<script src="crimeMap.js?v=3.14"></script>
+		<script src="us-states.js?v=3.14"></script>
+		<script src="la.js?v=3.14"></script>
+		<script src="laCrimeCount.js?v=3.14"></script>
+		
+		<script src="LACountyCityList.js?v=3.14"></script>
+		<script src="selection.js?v=3.14"></script>
+		
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		
+	</head>
+	<body>
+		<div class="wrapper" style="height: auto;">
+			<div class="well no-shadow solidBorder" >
+			
+				<div class="col-sm-4 desc" id="selection"> 
+					<label class="control-label" for="yearSelect">Select Cities of Los Angeles County</label>
+					<div >	
+						<select id="locSelect" name="locSelect" class="selection" style="width: 100%;">
+							<option value=""> Location </option>
+						</select>
+					</div>
+				</div>
+				<br>
+				<!--map-->
+				<div class="col-sm-12">
+					<div id="crimeMap" style="height: 830px;"></div>
+				</div>
+			</div>
+			
+		</div>
+	</body>
+</html>
